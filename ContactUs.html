@@ -4,18 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Creepster&family=DynaPuff:wght@400..700&family=Germania+One&display=swap" rel="stylesheet">
+    <style>
+        .box{
+         height: 100%;
+        width: 100%;
+        font-size: large;
+        background-color: blanchedalmond;
+        font-style: inherit;
+        border: 4px solid black;
+        font-family: 'poppins',sans-serif;
+        }
+        button {
+            font-size: 18px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            display: inline-block;
+            text-align: center;
+            font-weight: bold;
+            padding: 0,7em,2em;
+            border: 1px solid black;
+            border-radius: 2px;
+            position: relative;
+            box-shadow: 0 2px 10px rgba(0,0,0,16,),0 3px 6px rgba(0,0,0,0.1);
+            color: black;
+            text-decoration: none;
+            transition: 0.4s ease all;
+            z-index: 1;
+        }
+        button:before{
+            transition: 0.5s all ease;
+            position: absolute;
+            top: 0;
+            left: 5%;
+            right: 5%;
+            bottom: 0;
+            opacity: 0;
+            content: '';
+            background-color: black;
+            z-index: -1;
+        }
+        button:hover,button:focus{
+            color: white;
+        }
+        button:hover:before,button:focus:before{
+            transition: 0.5s all ease;
+            left: 0;
+            right: 0;
+            opacity: 1;
+        }
+        button:active{
+            transform:scale(0.9)
+        }
+        .link a{
+        margin-left: 8%;
+         text-align: center;
+      }
+      .link{
+          position: sticky;
+          padding: 5px;
+          margin-left: 10px;
+          height: 35px;
+          width: 98%;
+          background-color: lightblue;
+          top: 1%;
+          bottom: 2%;
+        }
+     .us{
+        font-family: 'Bungee Spice';
+     }
+     .form{
+        font-family: 'Bungee Spice';
+     }
+     .more{
+        font-family: 'Bungee Spice';
+     }
+    </style>
 </head>
 <body>
+    <div class="box">
+        <div class="link">
     <ul>
-        <li><a href="C:\Users\pandy\OneDrive\Desktop\html\index.html">Home</a></li>
-        <li><a href="C:\Users\pandy\OneDrive\Desktop\html\Culture.html">Culture</a></li>
-        <li><a href="C:\Users\pandy\OneDrive\Desktop\html\Landmark.html">Landmarks</a></li>
-        <li><a href="C:\Users\pandy\OneDrive\Desktop\html\Cuisine.html">Cuisine</a></li>
-        <li><a href="C:\Users\pandy\OneDrive\Desktop\html\ContactUs.html">Contact Us</a></li>
+        <a href="C:\Users\pandy\OneDrive\Desktop\html\index.html">Home</a></li>
+        
+        <a href="C:\Users\pandy\OneDrive\Desktop\html\Culture.html">Culture</a></li>
+        
+        <a href="C:\Users\pandy\OneDrive\Desktop\html\Landmark.html">Landmarks</a></li>
+        
+        <a href="C:\Users\pandy\OneDrive\Desktop\html\Cuisine.html">Cuisine</a></li>
+        
+        <a href="C:\Users\pandy\OneDrive\Desktop\html\ContactUs.html">Contact Us</a></li>
     </ul>
-    <h1>Contact Us</h1>
+</div>
+   <div class="us"><h1 text align="center">Contact Us</h1></div> 
     <p>please fill out the form below for any inquiries or to register as an student.</p>
-    <h1>Student Registration Form</h1>  
+    <div class="form"><h1 text align="center">Student Registration Form</h1></div>
     <form cellpadding="5" cellspacing="0">
         <label for="First Name:"></label>First Name: <input placeholder="Enter your first name" name="fanme" id="First Name">
         <br>
@@ -51,12 +136,23 @@
       <label for="Marks"></label>Marks: <input type="number" name="Marks" id="Marks">
       <br>
       <br>
+      <button>
       <input type="Submit" name="Submit" id="Submit">
+    
+       </button>
+    
+       <button>
       <input type="reset" name="reset" id="reset">
+       
+    </button>
     </form>
-    <h1>More Information</h1>   
+   <div class="more"><h1 text align="center">More Information</h1></div> 
         <p><i>Explore government oppurtunities on the official OJAS website:</i></p>
         <iframe src="https://ojas.gujarat.gov.in/"></iframe>
         <li><a href="C:\Users\pandy\OneDrive\Desktop\html\index.html">&#8592back to home</a></li>
+        <address><p><em>Contact us at <a href="">info@incredibleindia.com</a></em></i></span></address>
+            <span>&copycompny 2025 Incredible India Project. All right reserved.</span><br>
+            <span>Follow us on:<a href="">Facebook</a> | <a href="">Twitter</a></span>
+    </div>
 </body>
 </html>
