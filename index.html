@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Creepster&family=DynaPuff:wght@400..700&family=Germania+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
     <style>
       .link a{
         margin-left: 8%;
@@ -32,8 +35,12 @@
       .titles{
        font-family: 'Bungee Spice';
      } 
-       #top{
+       .top{
       font-family: 'Bungee Spice';
+      transition: transform 1s;
+        }
+        .top:hover{
+          transform: scale(2);
         }
         #subtop{
        font-family: 'Bungee Spice';
@@ -50,19 +57,37 @@
           background-color: lightblue;
           top: 1%;
           bottom: 2%;
+          cursor: pointer;
+          border-radius: 20px;
+          margin-top: 15px;
+          
+        }
+        .footer{
+          justify-content: center;
+          text-align: center;
+          background-color: lightcoral;
+          margin-bottom: 5px;
+          border-radius: 40px;
+        }
+        img{
+          border-radius: 50px;
+          transition: transform 1s;
+          padding: 10px;
+        }
+        img:hover{
+          transform: scale(1.15,1.1);
         }
     </style>
 </head>
 <body>
     <div class="box">
         <div class="main">
-  <div id="top"> <h1 text align="center">welcome to <mark>incredible india</mark></h1></div> 
+  <div class="top"> <h1 text align="center">welcome to <mark>incredible india</mark></h1></div> 
     <div id="subtop"><p><h3 text align="center">"discovery the diversity,beauty,and rich heritage of india"</p></h3></div>
 
     <div class="link">
     <ul>
         <a href="C:\Users\pandy\OneDrive\Desktop\html\index.html">Home</a></li>
-        
         <a href="C:\Users\pandy\OneDrive\Desktop\html\Culture.html">Culture</a></li>
         
         <a href="C:\Users\pandy\OneDrive\Desktop\html\Landmark.html">Landmarks</a></li>
@@ -75,14 +100,14 @@
    <div class="titles"><h1 text align="center">About india</h1></div> 
     <p><h4>india is a land of incredible diversity from the snow capped peaks of the <i>himalayas</i>to the serenabackwates to kerela every corner of india tells a unique story. india is the <b>second-most popular country</b> in the world and boasts a history spanning thousands of years its rich tradition have left an incredible mark on the world</p></h4>
    <div class="figure">
-    <figure align="center"><image src="C:\Users\pandy\AppData\Local\Microsoft\Windows\INetCache\IE\U6CF1LBK\india_map[1].jpg" height="300x" width="300px"></image></figure>
+    <figure align="center"><image src="https://c8.alamy.com/comp/ENK3HX/vector-indian-map-with-flag-design-ENK3HX.jpg" height="300x" width="300px"></image></figure>
    </div> 
     <blockquote>india is a land of cultural and geographical dynasty</blockquote> 
     <p align="left">"unity in diversity is not just a slogan in india but a way of life"</p>
     <p>highlights  of india include :</p>
     <ul>
       
-        <li><b>architecture</b>majestic movements like taj mahal and red fort</li>
+       <li><b>architecture</b>majestic movements like taj mahal and red fort</li>
         <li><b>cuisine</b>diverse flavour from soicy curries to sweet deserts</li>
         <li><b>culture</b>vibrant festivals,classical dance and colorful attire</li>
     </ul>
@@ -93,7 +118,7 @@
         <li><i>music:</i>tradational instrument like sitar,tabla,veena</li>
         <li><i>festivals:</i>diwali,holi,eid,and christmas bring people together in celebration</li>
     </ul>
-    <image src="C:\Users\pandy\AppData\Local\Microsoft\Windows\INetCache\IE\38FTLDP0\dance[1].jpg" height="400px" width="600px"></image>
+    <image src="C:\Users\pandy\AppData\Local\Microsoft\Windows\INetCache\IE\38FTLDP0\dance[1].jpg" height="300px" width="400px"></image>
     <p>a glimpse of indian classical dance</p>
    <div class="cuisine"> <h2 text align="center">Delecious indian cuisine</h2></div>
     <p><h4>indian food is diverse as its culture from the entry curries of the south to the bread of the north there something for everyone popular dishes include;</p></h4>
@@ -102,13 +127,15 @@
         <li><b>south indian:</b>dosa,idli and sambhar</li>
         <li><b>street food:</b>panipuri,chhat,vada pav</li>
     </ul>
-    <image src="C:\Users\pandy\AppData\Local\Microsoft\Windows\INetCache\IE\H8GDM7S0\biryani[1].jpg" height="400px" width="600px"></image>
+    <image src="C:\Users\pandy\AppData\Local\Microsoft\Windows\INetCache\IE\H8GDM7S0\biryani[1].jpg" height="300px" width="400px"></image>
     <p>delicious hyderabadi biryani</p>
-    <image src="C:\Users\pandy\AppData\Local\Microsoft\Windows\INetCache\IE\U6CF1LBK\street_food[1].jpg" height="400px" width="600px"></image>\
+    <image src="C:\Users\pandy\AppData\Local\Microsoft\Windows\INetCache\IE\U6CF1LBK\street_food[1].jpg" height="300px" width="400px"></image>
     <p>colourful and flavourful indian street food</p>
+    <div class="footer">
     <address><p><em>Contact us at <a href="">info@incredibleindia.com</a></em></i></span></address>
       <span>&copycompny 2025 Incredible India Project. All right reserved.</span><br>
       <span>Follow us on:<a href="">Facebook</a> | <a href="">Twitter</a></span>
+    </div>
       </div>
   </div>
 </body>
